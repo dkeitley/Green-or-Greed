@@ -6,7 +6,6 @@ function Client() {
 
 Client.prototype = {
 	connect: function() {
-		// change to match server ip & port
 		var server = 'http://localhost:9001';
 		this.socket = io.connect(server);
 
