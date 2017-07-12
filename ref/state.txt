@@ -1,0 +1,114 @@
+{ tax_step: 0.1,
+  research_step: 0.3,
+  players: 
+   { Bob: 
+      { name: 'Bob',
+        money: 437.7,
+        score: 0.018333333333333333,
+        reputation: [ 1, 0, 0, 0, 0, 0 ],
+        research: { coal: 1, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 } },
+     Jill: 
+      { name: 'Jill',
+        money: 437.7,
+        score: 0.018333333333333333,
+        reputation: [ 1, 0, 0, 0, 0, 0 ],
+        research: { coal: 1, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 } } },
+  regions: 
+   [ { players: 
+        { Bob: 
+           { active: { coal: 1, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 },
+             total: { coal: 1, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 } },
+          Jill: 
+           { active: { coal: 1, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 },
+             total: { coal: 1, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 } } },
+       demand: 100,
+       supply: null,
+       taxes: { coal: 1.2999999999999998, nuclear: 1.5, gas: 1.5 },
+       price: 10 },
+     { players: 
+        { Bob: 
+           { active: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 },
+             total: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 } },
+          Jill: 
+           { active: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 },
+             total: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 } } },
+       demand: 100,
+       supply: 0,
+       taxes: { coal: 1.2999999999999998, nuclear: 1.5, gas: 1.5 },
+       price: 10 },
+     { players: 
+        { Bob: 
+           { active: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 },
+             total: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 } },
+          Jill: 
+           { active: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 },
+             total: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 } } },
+       demand: 100,
+       supply: 0,
+       taxes: { coal: 1.2999999999999998, nuclear: 1.5, gas: 1.5 },
+       price: 10 },
+     { players: 
+        { Bob: 
+           { active: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 },
+             total: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 } },
+          Jill: 
+           { active: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 },
+             total: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 } } },
+       demand: 100,
+       supply: 0,
+       taxes: { coal: 1.2999999999999998, nuclear: 1.5, gas: 1.5 },
+       price: 10 },
+     { players: 
+        { Bob: 
+           { active: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 },
+             total: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 } },
+          Jill: 
+           { active: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 },
+             total: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 } } },
+       demand: 100,
+       supply: 0,
+       taxes: { coal: 1.2999999999999998, nuclear: 1.5, gas: 1.5 },
+       price: 10 },
+     { players: 
+        { Bob: 
+           { active: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 },
+             total: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 } },
+          Jill: 
+           { active: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 },
+             total: { coal: 0, nuclear: 0, gas: 0, wind: 0, solar: 0, hydro: 0 } } },
+       demand: 100,
+       supply: 0,
+       taxes: { coal: 1.2999999999999998, nuclear: 1.5, gas: 1.5 },
+       price: 10 } ],
+  facilities: 
+   { coal: 
+      { fuel_cost: 1,
+        base_cost: 10,
+        base_output: 10,
+        building_costs: 10 },
+     nuclear: 
+      { fuel_cost: 1,
+        base_cost: 10,
+        base_output: 10,
+        building_costs: 10 },
+     gas: 
+      { fuel_cost: 1,
+        base_cost: 10,
+        base_output: 10,
+        building_costs: 10 },
+     wind: 
+      { fuel_cost: 0,
+        base_cost: 10,
+        base_output: 10,
+        building_costs: 10 },
+     solar: 
+      { fuel_cost: 0,
+        base_cost: 10,
+        base_output: 10,
+        building_costs: 10 },
+     hydro: 
+      { fuel_cost: 0,
+        base_cost: 10,
+        base_output: 10,
+        building_costs: 10 } },
+  global_costs: { lobby: 10, research: 10, advertise: 10 } }

@@ -1,0 +1,56 @@
+<html>
+<head>
+<script type="text/javascript" src="js\phaser.min.js"></script>
+<script type="text/javascript" src="socket.io.js"></script>
+<script type= "text/javascript" src="client.js"></script>
+<script type= "text/javascript" src="Icon.js"></script>
+<script type= "text/javascript" src="JoinState.js"></script>
+<script type= "text/javascript" src="EndState.js"></script>
+<script type= "text/javascript" src="ContModalBox.js"></script>
+<script type= "text/javascript" src="ContModal.js"></script>
+<script type= "text/javascript" src="MainState.js"></script>
+
+
+
+
+<script>
+"use strict"
+
+var game = new Phaser.Game(1280,720,Phaser.AUTO,'');
+var num_players = 0;
+var own_name = "";
+var player_names = [];
+var gameState;
+
+
+var client = new Client();
+client.connect();
+
+client.socket.on('game_start',function(data) {
+		gameState = data;
+		num_players++;
+		game.state.start('main');
+
+});
+
+client.socket.on('notify_change',function(data) {
+		gameState = data;
+
+});
+
+client.socket.on('game_over',function(data) {
+	game.state.start('end');
+});
+
+game.state.add('join',JoinState);
+game.state.add('main',MainGameState);
+game.state.add('end',EndState);
+game.state.start('join');
+
+
+
+</script>
+</head>
+<body>
+</body>
+</html>
